@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Arcade.com</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <header>
+    <div class="company">
+      <img class="im" src="logo.png" alt="" />
+      <h2 class="logo">
+        <p>ARCADE.com</p>
+      </h2>
+    </div>
+
+    <nav class="navigation">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Services</a>
+      <a href="">Contact</a>
+      <button class="login">Login/Sign In</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="h1 hero-title">
+          Discover Variety of gadgets from <span>ARCADE</span>
+        </h1>
+
+        <p class="hero-text">
+          Partner with one of the world’s largest retailers of gaming products.
+        </p>
+
+        <div class="btn-group">
+          <button class="btn_btn-secondary">Join now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrapper">
+    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"
+            ><ion-icon name="lock-closed-outline"></ion-icon
+          ></span>
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <div class="remember-forget">
+          <label><input type="checkbox" />Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn" onclick="myfunction()">Login</button>
+        <div class="login-register">
+          <p>
+            Don't have an account?<a href="#" class="register-link">
+              Register</a
+            >
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+          <input type="text" required />
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"
+            ><ion-icon name="lock-closed-outline"></ion-icon
+          ></span>
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <div class="remember-forget">
+          <label
+            ><input type="checkbox" />I agree to the terms & conditions</label
+          >
+        </div>
+        <button type="submit" class="btn" onclick="myfunction()">
+          Register
+        </button>
+        <div class="login-register">
+          <p>
+            Already have an account?<a href="#" class="login-link"> Login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</body>
