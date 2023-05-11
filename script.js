@@ -1,15 +1,38 @@
-const wrapper = document.querySelector('.wrapper');
-const loginLink = document.querySelector('.login-link');
-const registerLink = document.querySelector('.register-link');
+'use strict';
 
-registerLink.addEventListener('click',()=> {
-    wrapper.classList.add('active');
-});
+// element toggle function
+const elemToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-loginLink.addEventListener('click',()=> {
-    wrapper.classList.remove('active');
-});
 
-function myfunction(){
-    window.location.href="http://127.0.0.1:5500/index.html";
+
+// navbar variables
+const navbar = document.querySelector("[data-navbar]");
+const navbarToggleBtn = document.querySelector("[data-navbar-toggle-btn]");
+
+navbarToggleBtn.addEventListener("click", function () { elemToggleFunc(navbar); });
+
+
+
+// whishlist button
+const whishlistBtn = document.querySelectorAll("[data-whishlist-btn]");
+
+for (let i = 0; i < whishlistBtn.length; i++) {
+
+  whishlistBtn[i].addEventListener("click", function () { elemToggleFunc(this); });
+
 }
+
+
+
+// go to top variable
+const goTopBtn = document.querySelector("[data-go-top]");
+
+window.addEventListener("scroll", function () {
+
+  if (this.window.scrollY >= 800) {
+    goTopBtn.classList.add("active");
+  } else {
+    goTopBtn.classList.remove("active");
+  }
+
+});

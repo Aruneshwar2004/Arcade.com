@@ -1,130 +1,1243 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Arcade.com</title>
+<html lang="en">
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcade</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet"
   />
 </head>
 
-<body>
+<body id="top">
   <header>
-    <div class="company">
-      <img class="im" src="logo.png" alt="" />
-      <h2 class="logo">
-        <p>ARCADE.com</p>
-      </h2>
+
+    <div class="container">
+
+      <a href="#" class="logo">
+        <a href="#" class="title">Arcade.com</a>
+      </a>
+
+      <div class="header-right">
+
+        <div class="header-nav-wrapper">
+
+          <button class="navbar-toggle-btn" data-navbar-toggle-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+          <nav class="navbar" data-navbar>
+
+            <ul class="navbar-list">
+
+              <li>
+                <a href="#" class="navbar-link">Home</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link">About</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link">Explore</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link">Collections</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link">Blog</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link">Premium</a>
+              </li>
+
+              <li>
+                <a href="#" class="navbar-link">Contact</a>
+              </li>
+
+            </ul>
+
+          </nav>
+
+        </div>
+
+        <div class="header-actions">
+          <input type="search" placeholder="Search" class="search-field">
+
+          <button class="btn btn-primary">Sign in</button>
+        </div>
+
+      </div>
+
     </div>
 
-    <nav class="navigation">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Services</a>
-      <a href="">Contact</a>
-      <button class="login">Login/Sign In</button>
-    </nav>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="h1 hero-title">
-          Discover Variety of gadgets from <span>ARCADE</span>
-        </h1>
 
-        <p class="hero-text">
-          Partner with one of the world’s largest retailers of gaming products.
-        </p>
 
-        <div class="btn-group">
-          <button class="btn_btn-secondary">Join now</button>
+
+
+  <main>
+
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero">
+        <video id="background-video" autoplay loop muted class="video">
+          <source src="assets/images/video.mp4" type="video/mp4" />
+        </video>
+        <div class="container">
+          
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Discover Large collection of products <span>ARCADE</span></h1>
+
+            <p class="hero-text">
+              Buy with one of the world’s largest retailers of gaming products.
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-primary">Explore more</button>
+
+              <button class="btn btn-secondary">Join Premium</button>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/mario.jpg" alt="nft art">
+          </figure>
+
         </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEW PRODUCT
+      -->
+
+      <section class="new-product">
+        <div class="container">
+
+          <div class="section-header-wrapper">
+
+            <h2 class="h2 section-title">Newest Items</h2>
+
+            <button class="btn btn-primary">View all</button>
+
+          </div>
+
+          <ul class="product-list">
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/a.jpg" alt="Gaming Keyboard">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Cool Gaming collection</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png" alt="abc">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Acer Company</h4>
+
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">$450k</data>
+
+                      <p class="label">Best Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">120k+ Interested</p>
+
+                    <button class="tag">View</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/a.jpg" alt="Acer-Nitro">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Acer Nitro</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png" alt="Acer">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Acer</h4>
+
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">$432k</data>
+
+                      <p class="label">Best Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">125k+ Interested.</p>
+
+                    <button class="tag">View</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/a.jpg" alt="D">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Cool Earphones</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png" alt="Jack Reacher">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Boat</h4>
+
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">$100k</data>
+
+                      <p class="label">Best Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">100k+ Interested</p>
+
+                    <button class="tag">View</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/a.jpg" alt="Dimond riding a blue body art">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Cool Console</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png" alt="Jack Reacher">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Cool</h4>
+
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">$123k</data>
+
+                      <p class="label">Best Price</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">95k+ Interested</p>
+
+                    <button class="tag">View</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <section class="about">
+        <div class="container">
+
+          <h2 class="h2 about-title">Buy From Top Brands</h2>
+
+          <ol class="about-list">
+
+            <li class="about-item">
+              <div class="about-card">
+
+                <div class="card-number">01</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/single-create-sell-item-1.png" alt="wallet icon">
+                </div>
+
+                <h3 class="h3 about-card-title">Connect your favourite wallet</h3>
+
+                <p class="about-card-text">
+                  Arcade allows to connect with 100+ verified wallets
+                </p>
+
+              </div>
+            </li>
+
+            <li class="about-item">
+              <div class="about-card">
+
+                <div class="card-number">02</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/single-create-sell-item-2.png" alt="collection icon">
+                </div>
+
+                <h3 class="h3 about-card-title">Browse by brands</h3>
+
+                <p class="about-card-text">
+                  Explore your favourite brands
+                </p>
+
+              </div>
+            </li>
+
+            <li class="about-item">
+              <div class="about-card">
+
+                <div class="card-number">03</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/single-create-sell-item-3.png" alt="folder icon">
+                </div>
+
+                <h3 class="h3 about-card-title">Verified Sellers</h3>
+
+                <p class="about-card-text">
+                  All our partners are verified , No hassle!!
+                </p>
+
+              </div>
+            </li>
+
+            <li class="about-item">
+              <div class="about-card">
+
+                <div class="card-number">04</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/single-create-sell-item-4.png" alt="diamond icon">
+                </div>
+
+                <h3 class="h3 about-card-title">Best Service</h3>
+
+                <p class="about-card-text">
+                  We strive forward to give the best products for your ultimate gaming experience
+                </p>
+
+              </div>
+            </li>
+
+          </ol>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #EXPLORE PRODUCT
+      -->
+
+      <section class="explore-product">
+        <div class="container">
+
+          <div class="section-header-wrapper">
+
+            <h2 class="h2 section-title">Explore Product</h2>
+
+            <button class="btn btn-primary">Explore</button>
+
+          </div>
+
+          <ul class="product-list">
+
+            
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/keyboard.jpg">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Nintodo switch</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Resd</h4>
+
+                        <a href="#" class="author-username">@resd</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">321$</data>
+
+                      <p class="label">Current Bid</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">120+ Interested</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/keyboard.jpg">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Chip 456</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Qualcomm</h4>
+
+                        <a href="#" class="author-username">@Qualcomm</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">43H</data>
+
+                      
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">120+ Interested</p>
+
+                    <button class="tag">New</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/keyboard.jpg" alt="Dimond riding a blue body art">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Dragon Keyboard</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">MSI</h4>
+
+                        <a href="#" class="author-username">@dragon</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">98$</data>
+
+
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">120+ Interested.</p>
+
+                    <button class="tag">View</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/keyboard.jpg">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Xbox Series X</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png" >
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Xbox</h4>
+
+                        <a href="#" class="author-username">@microsoft</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">928$</data>
+
+            
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">120+ Interested.</p>
+
+                    <button class="tag">View</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/keyboard.jpg" >
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Playstation 4</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Sony</h4>
+
+                        <a href="#" class="author-username">@Playstation</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">907$</data>
+
+       
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">120+ Interested</p>
+
+                    <button class="tag">View</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/keyboard.jpg">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Sony Pixel</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png" >
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Sony</h4>
+
+            
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">78$</data>
+
+                      
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">120+ Interested.</p>
+
+                    <button class="tag">View</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="product-item">
+
+              <div class="product-card" tabindex="0">
+
+                <figure class="product-banner">
+
+                  <img src="./assets/images/keyboard.jpg">
+
+                  <div class="product-actions">
+                    <button class="product-card-menu">
+                      <ion-icon name="ellipsis-horizontal"></ion-icon>
+                    </button>
+
+                    <button class="add-to-whishlist" data-whishlist-btn>
+                      <ion-icon name="heart"></ion-icon>
+                    </button>
+                  </div>
+
+                  <button class="place-bid-btn">Place Order</button>
+
+                </figure>
+
+                <div class="product-content">
+
+                  <a href="#" class="h4 product-title">Dimond</a>
+
+                  <div class="product-meta">
+
+                    <div class="product-author">
+
+                      <figure class="author-img">
+                        <img src="./assets/images/finale.png">
+                      </figure>
+
+                      <div class="author-content">
+                        <h4 class="h5 author-title">Jack R</h4>
+
+                        <a href="#" class="author-username">@jackr</a>
+                      </div>
+
+                    </div>
+
+                    <div class="product-price">
+                      <data value="0.568">245$</data>
+
+                      
+                    </div>
+
+                  </div>
+
+                  <div class="product-footer">
+                    <p class="total-bid">12+ Place Order.</p>
+
+                    <button class="tag">View</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOP BRANDS
+      -->
+
+      <section class="top-brand">
+        <div class="container">
+
+          <h2 class="h2 top-brand-title">
+            Top Brands
+            <ion-icon name="chevron-down"></ion-icon>
+          </h2>
+
+          <ol class="top-brand-list">
+
+            <li class="top-brand-item">
+              <a href="#" class="top-brand-card">
+
+                <div class="card-number">01</div>
+
+                <figure class="card-avatar">
+                  <img src="./assets/images/finale.png" alt="Hp">
+
+                  <div class="avatar-badge">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h5 card-title">Hp pavilion</h3>
+
+                  <data value="2500000">$2500,000</data>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="top-brand-item">
+              <a href="#" class="top-brand-card">
+
+                <div class="card-number">02</div>
+
+                <figure class="card-avatar">
+                  <img src="./assets/images/finale.png" alt="Dell">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h5 card-title">Dell</h3>
+
+                  <data value="2500000">$2500,000</data>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="top-brand-item">
+              <a href="#" class="top-brand-card">
+
+                <div class="card-number">03</div>
+
+                <figure class="card-avatar">
+                  <img src="./assets/images/finale.png" alt="Lenovo">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h5 card-title">Lenovo</h3>
+
+                  <data value="2500000">$2500,000</data>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="top-brand-item">
+              <a href="#" class="top-brand-card">
+
+                <div class="card-number">04</div>
+
+                <figure class="card-avatar">
+                  <img src="./assets/images/finale.png" alt="Ace Nitro">
+
+                  <div class="avatar-badge">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h5 card-title">Acer</h3>
+
+                  <data value="2500000">$2500,000</data>
+                </div>
+
+              </a>
+            </li>
+
+      </section>
+
+    </article>
+
+  </main>
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <h4>Arcade.com</h4>
+          </a>
+
+          <p class="footer-brand-text">
+            The Best place to buy all your gaming products
+          </p>
+
+          <h3 class="h4 social-title">Join the community</h3>
+
+          <ul class="social-list">
+
+
+            <li>
+              <a href="https://twitter.com/ARCADEfyufu" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/ARCADE/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Marketplace</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Gaming</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Product</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">All Brands</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Social Network</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Domain Names</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Collectibles</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Explore</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Featured Drops</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Live Auctions</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">All Brands</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Collections</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Top Seller</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Items Details</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Supports</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Settings & Privacy</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Help & Support</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Live Auctions</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Item Details</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">24/7 Supports</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+          </ul>
+
+        </div>
+
       </div>
     </div>
-  </section>
 
-  <div class="wrapper">
-    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+    <div class="footer-bottom">
+      <div class="container">
 
-    <div class="form-box login">
-      <h2>Login</h2>
-      <form action="#">
-        <div class="input-box">
-          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-          <input type="email" required />
-          <label>Email</label>
+
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+
+          <a href="#">Terms & Conditions</a>
         </div>
-        <div class="input-box">
-          <span class="icon"
-            ><ion-icon name="lock-closed-outline"></ion-icon
-          ></span>
-          <input type="password" required />
-          <label>Password</label>
-        </div>
-        <div class="remember-forget">
-          <label><input type="checkbox" />Remember me</label>
-          <a href="#">Forgot Password?</a>
-        </div>
-        <button type="submit" class="btn" onclick="myfunction()">Login</button>
-        <div class="login-register">
-          <p>
-            Don't have an account?<a href="#" class="register-link">
-              Register</a
-            >
-          </p>
-        </div>
-      </form>
+
+      </div>
     </div>
-    <div class="form-box register">
-      <h2>Registration</h2>
-      <form action="#">
-        <div class="input-box">
-          <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-          <input type="text" required />
-          <label>Username</label>
-        </div>
-        <div class="input-box">
-          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-          <input type="email" required />
-          <label>Email</label>
-        </div>
-        <div class="input-box">
-          <span class="icon"
-            ><ion-icon name="lock-closed-outline"></ion-icon
-          ></span>
-          <input type="password" required />
-          <label>Password</label>
-        </div>
-        <div class="remember-forget">
-          <label
-            ><input type="checkbox" />I agree to the terms & conditions</label
-          >
-        </div>
-        <button type="submit" class="btn" onclick="myfunction()">
-          Register
-        </button>
-        <div class="login-register">
-          <p>
-            Already have an account?<a href="#" class="login-link"> Login</a>
-          </p>
-        </div>
-      </form>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-  ></script>
+  </footer>
+
+
+
+
+
+  <!--
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
+</html>
